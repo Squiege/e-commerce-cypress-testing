@@ -1,5 +1,5 @@
 describe('Salinaka E-Commerce Product Tests', () => {
-    it('Checks if the products are visible', () => {
+    it('Checks if the product grid, names, price, images, and name are visible', () => {
         cy.visit('https://salinaka-ecommerce.web.app')
 
         // Click Shop
