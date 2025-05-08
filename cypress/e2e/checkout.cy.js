@@ -26,7 +26,7 @@ describe('Salinaka E-Commerce Product Tests', () => {
         cy.get('.navigation-menu-item > .button-link').click()
         cy.get('.basket-item').should('exist')
 
-        // Optional: Check for specific product name if it's visible
+        // Check for specific product name if it's visible
         cy.get('.basket-item-details > a').should('exist')
 
         // Proceed to checkout
