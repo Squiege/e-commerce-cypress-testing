@@ -84,6 +84,10 @@ Choose any .cy.js file in the test runner to execute the tests interactively.
 - GitHub for version control
 
 📸 Demo Assets
+![Cart Tests](cypress/screenshots/swag-labs-test.gif)
+![Checkout Tests](cypress/screenshots/swag-labs-test.gif)
+![Login Tests](cypress/screenshots/swag-labs-test.gif)
+![Product Tests](cypress/screenshots/swag-labs-test.gif)
 
 
 🤝 Connect
