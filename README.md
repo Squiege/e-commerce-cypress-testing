@@ -5,7 +5,16 @@ This project contains a comprehensive Cypress end-to-end test suite for the [Sal
 ---
 
 ## 📁 Project Structure
-<pre> ```text cypress/ └── e2e/ ├── cart.cy.js ├── checkout.cy.js ├── login.cy.js └── product.cy.js ``` </pre>
+<pre> 
+```
+text cypress/ 
+└── e2e/ 
+├── cart.cy.js 
+├── checkout.cy.js 
+├── login.cy.js 
+└── product.cy.js 
+``` 
+</pre>
 
 ---
 
