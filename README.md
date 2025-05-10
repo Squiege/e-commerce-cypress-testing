@@ -84,9 +84,14 @@ Choose any .cy.js file in the test runner to execute the tests interactively.
 - GitHub for version control
 
 📸 Demo Assets
+---
+Cart Tests
 ![Cart Tests](cypress/cart-tests.gif)
+Checkout Tests
 ![Checkout Tests](cypress/checkout-tests.gif)
+Login Tests
 ![Login Tests](cypress/login-tests.gif)
+Product Tests
 ![Product Tests](cypress/product-tests.gif)
 
 
