@@ -41,50 +41,50 @@ Choose any .cy.js file in the test runner to execute the tests interactively.
 
 ### ✅ Test Coverage
 🔐 Login Tests
-Valid login
+- Valid login
 
-Invalid credentials
+- Invalid credentials
 
-Empty submission
+- Empty submission
 
-Logout flow
+- Logout flow
 
 🛒 Cart Tests
-Add to cart
+- Add to cart
 
-Check quantity
+- Check quantity
 
-Check total price
+- Check total price
 
-Increment/decrement quantity
+- Increment/decrement quantity
 
-Remove item
+- Remove item
 
-Persist state after reload
+- Persist state after reload
 
 📦 Product Tests
-Product card shows name, brand, price, image
+- Product card shows name, brand, price, image
 
-Hover behavior reveals Add to Cart button
+- Hover behavior reveals Add to Cart button
 
-Add to cart via hover
+- Add to cart via hover
 
 💳 Checkout Tests
-Full checkout flow with address + contact info
+- Full checkout flow with address + contact info
 
-Payment method selection (Paypal)
+- Payment method selection (Paypal)
 
-Validates toast popup: "Feature not ready yet :)"
+- Validates toast popup: "Feature not ready yet :)"
 
 🧪 Technologies Used
-Cypress v12+
+- Cypress v12+
 
-JavaScript (ES6)
+- JavaScript (ES6)
 
-GitHub for version control
+- GitHub for version control
 
 📸 Demo Assets
-Screenshots and GIFs of test runs can be found in the project directory for visual verification (optional).
+
 
 🤝 Connect
 Feel free to connect with me on LinkedIn if you'd like to collaborate, ask questions, or discuss QA/testing roles!
