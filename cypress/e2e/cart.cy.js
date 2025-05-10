@@ -1,6 +1,8 @@
 describe('Salinaka E-Commerce Cart Tests', () => {
     beforeEach(() => {
         cy.visit('https://salinaka-ecommerce.web.app')
+
+        // Click Shop
         cy.contains('Shop').click()
 
         // Wait for products to appear
@@ -20,13 +22,14 @@ describe('Salinaka E-Commerce Cart Tests', () => {
         cy.get('.basket-item').should('exist')
         })
 
-
-
     it('Adds a product to the cart successfully', () => {
+        // Check if the product is in the cart
         cy.get('.basket-item-details > a').should('be.visible')
     })
 
     it('Checks product quantity in the cart', () => {
+
+        // Check if the quantity is greater than or equal to 1
         cy.get('h5.my-0').invoke('text').then((text) => {
             const quantity = parseInt(text, 10)
             expect(quantity).to.be.gte(1)
@@ -36,6 +39,7 @@ describe('Salinaka E-Commerce Cart Tests', () => {
     
 
     it('Checks the total price in the cart', () => {
+        // Check if the total price is greater than 0
         cy.get('.basket-total-amount').invoke('text').then((text) => {
         const price = parseFloat(text.replace(/[^0-9.-]+/g, ''))
         expect(price).to.be.greaterThan(0)
@@ -46,6 +50,7 @@ describe('Salinaka E-Commerce Cart Tests', () => {
       // Increment
         cy.get('.basket-control-add').click()
 
+        // Check if the quantity is greater than or equal to 2
         cy.get('.basket-item')
         .first()
         .find('h5.my-0')
@@ -58,6 +63,7 @@ describe('Salinaka E-Commerce Cart Tests', () => {
       // Decrement
         cy.get('.basket-control-minus').click()
 
+        // Check if the quantity is greater than or equal to 1
         cy.get('.basket-item')
         .first()
         .find('h5.my-0')
@@ -70,6 +76,7 @@ describe('Salinaka E-Commerce Cart Tests', () => {
     })
 
     it('Empties the cart by removing all items', () => {
+        // Remove the item from the cart
         cy.get('.basket-item-remove').click()
         cy.get('.basket-empty-msg')
         .should('exist')
